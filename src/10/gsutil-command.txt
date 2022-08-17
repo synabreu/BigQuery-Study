@@ -1,0 +1,31 @@
+gcloud components install gsutil
+
+gcloud auth login 
+
+gcloud config set project my-pc-project-357506 
+
+gsutil list
+
+gsutil cp supercloud-16*16.ico gs://mybigquery-bucket/
+
+gsutil ls gs://mybigquery-bucket/
+
+gsutil du –s gs://mybigquery-bucket/
+
+gsutil mb gs://mybigquery-second-bucket
+
+gsutil rb gs://mybigquery-second-bucket
+
+cd c:\Users\digit\Desktop\BigQuery 강의\
+
+gsutil cp 01.BigQuery-BigData.pptx gs://mybigquery-bucket/
+
+gsutil ls gs://mybiquery-bucket
+
+gsutil cp gs://mybiquery-bucket/supercloud-16*16.ico  . 
+
+gsutil rm gs://mybiquery-bucket/01.BigQuery-BigData.pptx
+
+gsutil ls gs://mybiquery-bucket/
+
+gsutil –m ls gs://mybiquery-bucket/
